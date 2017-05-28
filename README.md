@@ -1,220 +1,341 @@
-This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
+# React Native Appodeal Example (Android)
 
-Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
+Example of integration appodeal SDK with react-native (based on [nulleof](https://github.com/nulleof/react-native-appodeal) modified package: [https://github.com/drakmail/react-native-appodeal](https://github.com/drakmail/react-native-appodeal))
 
-## Table of Contents
+## How to run
 
-* [Updating to New Releases](#updating-to-new-releases)
-* [Available Scripts](#available-scripts)
-  * [npm start](#npm-start)
-  * [npm test](#npm-test)
-  * [npm run ios](#npm-run-ios)
-  * [npm run android](#npm-run-android)
-  * [npm run eject](#npm-run-eject)
-* [Writing and Running Tests](#writing-and-running-tests)
-* [Environment Variables](#environment-variables)
-  * [Configuring Packager IP Address](#configuring-packager-ip-address)
-* [Adding Flow](#adding-flow)
-* [Customizing App Display Name and Icon](#customizing-app-display-name-and-icon)
-* [Sharing and Deployment](#sharing-and-deployment)
-  * [Publishing to Expo's React Native Community](#publishing-to-expos-react-native-community)
-  * [Building an Expo "standalone" app](#building-an-expo-standalone-app)
-  * [Ejecting from Create React Native App](#ejecting-from-create-react-native-app)
-    * [Build Dependencies (Xcode & Android Studio)](#build-dependencies-xcode-android-studio)
-    * [Should I Use ExpoKit?](#should-i-use-expokit)
-* [Troubleshooting](#troubleshooting)
-  * [Networking](#networking)
-  * [iOS Simulator won't open](#ios-simulator-wont-open)
-  * [QR Code does not scan](#qr-code-does-not-scan)
+1. `git clone https://github.com/drakmail/react-native-appodeal-example.git`
+2. Install dependencies with `yarn install`
+3. Run android version: `yarn run android`
 
-## Updating to New Releases
+## Step by step integration instructions
 
-You should only need to update the global installation of `create-react-native-app` very rarely, ideally never.
+If you want to integrate appodeal to you react-native Android application you need to do the following steps:
 
-Updating the `react-native-scripts` dependency of your app should be as simple as bumping the version number in `package.json` and reinstalling your project's dependencies.
+### Add react-native-appodeal
 
-Upgrading to a new version of React Native requires updating the `react-native`, `react`, and `expo` package versions, and setting the correct `sdkVersion` in `app.json`. See the [versioning guide](https://github.com/react-community/create-react-native-app/blob/master/VERSIONS.md) for up-to-date information about package version compatibility.
+You could use [my fork of react-native-appodeal](https://github.com/drakmail/react-native-appodeal), which compiles and running on android. Just run `yarn add https://github.com/drakmail/react-native-appodeal.git`
 
-## Available Scripts
+### Link dependencies
 
-If Yarn was installed when the project was initialized, then dependencies will have been installed via Yarn, and you should probably use it to run these commands as well. Unlike dependency installation, command running syntax is identical for Yarn and NPM at the time of this writing.
+`react-native link react-native-appodeal`
 
-### `npm start`
+### Tune build.gradle
 
-Runs your app in development mode.
-
-Open it in the [Expo app](https://expo.io) on your phone to view it. It will reload if you save edits to your files, and you will see build errors and logs in the terminal.
-
-Sometimes you may need to reset or clear the React Native packager's cache. To do so, you can pass the `--reset-cache` flag to the start script:
+Open `android/app/build.gradle` and add somewhere in `android` section:
 
 ```
-npm start -- --reset-cache
-# or
-yarn start -- --reset-cache
+dexOptions {
+  jumboMode = true
+  javaMaxHeapSize "2g"
+}
 ```
 
-#### `npm test`
-
-Runs the [jest](https://github.com/facebook/jest) test runner on your tests.
-
-#### `npm run ios`
-
-Like `npm start`, but also attempts to open your app in the iOS Simulator if you're on a Mac and have it installed.
-
-#### `npm run android`
-
-Like `npm start`, but also attempts to open your app on a connected Android device or emulator. Requires an installation of Android build tools (see [React Native docs](https://facebook.github.io/react-native/docs/getting-started.html) for detailed setup). We also recommend installing Genymotion as your Android emulator. Once you've finished setting up the native build environment, there are two options for making the right copy of `adb` available to Create React Native App:
-
-##### Using Android Studio's `adb`
-
-1. Make sure that you can run adb from your terminal.
-2. Open Genymotion and navigate to `Settings -> ADB`. Select “Use custom Android SDK tools” and update with your [Android SDK directory](https://stackoverflow.com/questions/25176594/android-sdk-location).
-
-##### Using Genymotion's `adb`
-
-1. Find Genymotion’s copy of adb. On macOS for example, this is normally `/Applications/Genymotion.app/Contents/MacOS/tools/`.
-2. Add the Genymotion tools directory to your path (instructions for [Mac](http://osxdaily.com/2014/08/14/add-new-path-to-path-command-line/), [Linux](http://www.computerhope.com/issues/ch001647.htm), and [Windows](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/)).
-3. Make sure that you can run adb from your terminal.
-
-#### `npm run eject`
-
-This will start the process of "ejecting" from Create React Native App's build scripts. You'll be asked a couple of questions about how you'd like to build your project.
-
-**Warning:** Running eject is a permanent action (aside from whatever version control system you use). An ejected app will require you to have an [Xcode and/or Android Studio environment](https://facebook.github.io/react-native/docs/getting-started.html) set up.
-
-## Customizing App Display Name and Icon
-
-You can edit `app.json` to include [configuration keys](https://docs.expo.io/versions/latest/guides/configuration.html) under the `expo` key.
-
-To change your app's display name, set the `expo.name` key in `app.json` to an appropriate string.
-
-To set an app icon, set the `expo.icon` key in `app.json` to be either a local path or a URL. It's recommended that you use a 512x512 png file with transparency.
-
-## Writing and Running Tests
-
-This project is set up to use [jest](https://facebook.github.io/jest/) for tests. You can configure whatever testing strategy you like, but jest works out of the box. Create test files in directories called `__tests__` to have the files loaded by jest. See the [the template project](https://github.com/react-community/create-react-native-app/tree/master/react-native-scripts/template/__tests__) for an example test. The [jest documentation](https://facebook.github.io/jest/docs/getting-started.html) is also a wonderful resource, as is the [React Native testing tutorial](https://facebook.github.io/jest/docs/tutorial-react-native.html).
-
-## Environment Variables
-
-You can configure some of Create React Native App's behavior using environment variables.
-
-### Configuring Packager IP Address
-
-When starting your project, you'll see something like this for your project URL:
+and enable `multiDex` option by adding following line inside `defaultConfig` section:
 
 ```
-exp://192.168.0.2:19000
+multiDexEnabled true
 ```
 
-The "manifest" at that URL tells the Expo app how to retrieve and load your app's JavaScript bundle, so even if you load it in the app via a URL like `exp://localhost:19000`, the Expo client app will still try to retrieve your app at the IP address that the start script provides.
+### AndroidManifest.xml
 
-In some cases, this is less than ideal. This might be the case if you need to run your project inside of a virtual machine and you have to access the packager via a different IP address than the one which prints by default. In order to override the IP address or hostname that is detected by Create React Native App, you can specify your own hostname via the `REACT_NATIVE_PACKAGER_HOSTNAME` environment variable:
+According to [appodeal documentation](https://www.appodeal.ru/sdk/documentation?framework=1&full=1#p_4), you need to add following tags to your `android/app/src/main/AndroidManifest.xml` file:
 
-Mac and Linux:
-
-```
-REACT_NATIVE_PACKAGER_HOSTNAME='my-custom-ip-address-or-hostname' npm start
-```
-
-Windows:
-```
-set REACT_NATIVE_PACKAGER_HOSTNAME='my-custom-ip-address-or-hostname'
-npm start
-```
-
-The above example would cause the development server to listen on `exp://my-custom-ip-address-or-hostname:19000`.
-
-## Adding Flow
-
-Flow is a static type checker that helps you write code with fewer bugs. Check out this [introduction to using static types in JavaScript](https://medium.com/@preethikasireddy/why-use-static-types-in-javascript-part-1-8382da1e0adb) if you are new to this concept.
-
-React Native works with [Flow](http://flowtype.org/) out of the box, as long as your Flow version matches the one used in the version of React Native.
-
-To add a local dependency to the correct Flow version to a Create React Native App project, follow these steps:
-
-1. Find the Flow `[version]` at the bottom of the included [.flowconfig](.flowconfig)
-2. Run `npm install --save-dev flow-bin@x.y.z` (or `yarn add --dev flow-bin@x.y.z`), where `x.y.z` is the .flowconfig version number.
-3. Add `"flow": "flow"` to the `scripts` section of your `package.json`.
-4. Add `// @flow` to any files you want to type check (for example, to `App.js`).
-
-Now you can run `npm run flow` (or `yarn flow`) to check the files for type errors.
-You can optionally use a [plugin for your IDE or editor](https://flow.org/en/docs/editors/) for a better integrated experience.
-
-To learn more about Flow, check out [its documentation](https://flow.org/).
-
-## Sharing and Deployment
-
-Create React Native App does a lot of work to make app setup and development simple and straightforward, but it's very difficult to do the same for deploying to Apple's App Store or Google's Play Store without relying on a hosted service.
-
-### Publishing to Expo's React Native Community
-
-Expo provides free hosting for the JS-only apps created by CRNA, allowing you to share your app through the Expo client app. This requires registration for an Expo account.
-
-Install the `exp` command-line tool, and run the publish command:
+1. Inside `<manifest>` tag:
 
 ```
-$ npm i -g exp
-$ exp publish
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ```
 
-### Building an Expo "standalone" app
-
-You can also use a service like [Expo's standalone builds](https://docs.expo.io/versions/latest/guides/building-standalone-apps.html) if you want to get an IPA/APK for distribution without having to build the native code yourself.
-
-### Ejecting from Create React Native App
-
-If you want to build and deploy your app yourself, you'll need to eject from CRNA and use Xcode and Android Studio.
-
-This is usually as simple as running `npm run eject` in your project, which will walk you through the process. Make sure to install `react-native-cli` and follow the [native code getting started guide for React Native](https://facebook.github.io/react-native/docs/getting-started.html).
-
-#### Should I Use ExpoKit?
-
-If you have made use of Expo APIs while working on your project, then those API calls will stop working if you eject to a regular React Native project. If you want to continue using those APIs, you can eject to "React Native + ExpoKit" which will still allow you to build your own native code and continue using the Expo APIs. See the [ejecting guide](https://github.com/react-community/create-react-native-app/blob/master/EJECTING.md) for more details about this option.
-
-## Troubleshooting
-
-### Networking
-
-If you're unable to load your app on your phone due to a network timeout or a refused connection, a good first step is to verify that your phone and computer are on the same network and that they can reach each other. Create React Native App needs access to ports 19000 and 19001 so ensure that your network and firewall settings allow access from your device to your computer on both of these ports.
-
-Try opening a web browser on your phone and opening the URL that the packager script prints, replacing `exp://` with `http://`. So, for example, if underneath the QR code in your terminal you see:
+2. Inside `<application>` tag:
 
 ```
-exp://192.168.0.1:19000
+<meta-data android:name="com.appodeal.framework" android:value="android" />
+<receiver android:name="com.appodeal.ads.AppodealPackageAddedReceiver" android:exported="true" android:enabled="true">
+<intent-filter>
+    <action android:name="android.intent.action.PACKAGE_ADDED" />
+    <data android:scheme="package" />
+</intent-filter>
+</receiver>
+
+<activity android:name="com.appodeal.ads.InterstitialActivity"
+      android:configChanges="orientation|screenSize"
+      android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+<activity android:name="com.appodeal.ads.VideoActivity"
+      android:configChanges="orientation|screenSize"
+      android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+<activity android:name="com.appodeal.ads.LoaderActivity"
+      android:configChanges="orientation|screenSize"
+      android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
+<activity android:name="com.google.android.gms.ads.AdActivity"
+      android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+      android:theme="@android:style/Theme.Translucent" />
+
+<activity android:name="com.chartboost.sdk.CBImpressionActivity" android:excludeFromRecents="true"
+      android:hardwareAccelerated="true" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+      android:configChanges="keyboardHidden|orientation|screenSize" />
+
+<activity android:name="com.applovin.adview.AppLovinInterstitialActivity"
+      android:theme="@android:style/Theme.Translucent" />
+
+<activity android:name="com.mopub.mobileads.MoPubActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:theme="@android:style/Theme.Translucent" />
+<activity android:name="com.mopub.common.MoPubBrowser"
+      android:configChanges="keyboardHidden|orientation|screenSize" />
+<activity android:name="com.mopub.mobileads.MraidActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize" />
+<activity android:name="com.mopub.mobileads.MraidVideoPlayerActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize" />
+
+<activity android:name="org.nexage.sourcekit.mraid.MRAIDBrowser"
+      android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+      android:theme="@android:style/Theme.Translucent" />
+
+
+<activity android:name="com.amazon.device.ads.AdActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+<activity android:name="com.my.target.ads.MyTargetActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:hardwareAccelerated="true"/>
+
+<activity android:name="org.nexage.sourcekit.vast.activity.VASTActivity"
+      android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+<activity android:name="org.nexage.sourcekit.vast.activity.VPAIDActivity"
+      android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.appodeal.ads.networks.vpaid.VPAIDActivity"
+      android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+<activity android:name="com.appodeal.ads.networks.SpotXActivity"
+      android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.facebook.ads.InterstitialAdActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+
+<activity android:name="com.unity3d.ads.adunit.AdUnitActivity"
+    android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:hardwareAccelerated="true" />
+<activity android:name="com.unity3d.ads.adunit.AdUnitSoftwareActivity"
+    android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:hardwareAccelerated="false" />
+<activity android:name="com.unity3d.ads2.adunit.AdUnitActivity"
+    android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:hardwareAccelerated="true" />
+<activity android:name="com.unity3d.ads2.adunit.AdUnitSoftwareActivity"
+    android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:hardwareAccelerated="false" />
+
+
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.jirbo.adcolony.AdColonyOverlay"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.jirbo.adcolony.AdColonyFullscreen"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.jirbo.adcolony.AdColonyBrowser"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.vungle.publisher.FullScreenAdActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.startapp.android.publish.list3d.List3DActivity"
+      android:theme="@android:style/Theme" />
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.startapp.android.publish.OverlayActivity"
+      android:theme="@android:style/Theme.Translucent"
+      android:configChanges="orientation|keyboardHidden|screenSize" />
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.startapp.android.publish.FullScreenActivity"
+      android:theme="@android:style/Theme"
+      android:configChanges="orientation|keyboardHidden|screenSize" />
+<service android:name="com.yandex.metrica.MetricaService" android:enabled="true"
+     android:exported="true" android:process=":Metrica">
+	<intent-filter>
+		<category android:name="android.intent.category.DEFAULT" />
+		<action android:name="com.yandex.metrica.IMetricaService" />
+		<data android:scheme="metrica" />
+	</intent-filter>
+	<meta-data android:name="metrica:api:level" android:value="52" />
+</service>
+<receiver android:name="com.yandex.metrica.MetricaEventHandler"
+      android:enabled="true" android:exported="true">
+	<intent-filter>
+		<action android:name="com.android.vending.INSTALL_REFERRER" />
+	</intent-filter>
+</receiver>
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.yandex.mobile.ads.AdActivity"
+      android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.flurry.android.FlurryFullscreenTakeoverActivity"
+      android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+<activity android:name="com.appodeal.ads.VideoPlayerActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.revmob.FullscreenActivity" android:theme="@android:style/Theme.Translucent"
+    android:configChanges="keyboardHidden|orientation"/>
+
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.tapjoy.TJAdUnitActivity" android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.tapjoy.mraid.view.ActionHandler" android:configChanges="orientation|keyboardHidden|screenSize" />
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.tapjoy.mraid.view.Browser" android:configChanges="orientation|keyboardHidden|screenSize" />
+<!--suppress AndroidDomInspection -->
+<activity android:name="com.tapjoy.TJContentActivity" android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" android:hardwareAccelerated="true" />
 ```
 
-Try opening Safari or Chrome on your phone and loading
+## Usage
 
-```
-http://192.168.0.1:19000
-```
+To use appodeal in react-native, you need to import package:
 
-and
-
-```
-http://192.168.0.1:19001
+```javascript
+import Appodeal from 'react-native-appodeal'
 ```
 
-If this works, but you're still unable to load your app by scanning the QR code, please open an issue on the [Create React Native App repository](https://github.com/react-community/create-react-native-app) with details about these steps and any other error messages you may have received.
+Initialize it:
 
-If you're not able to load the `http` URL in your phone's web browser, try using the tethering/mobile hotspot feature on your phone (beware of data usage, though), connecting your computer to that WiFi network, and restarting the packager.
+```javascript
+Appodeal.setTesting(true) // if you want to setup testing mode
+Appodeal.init(YOUR_APPODEAL_API_KEY) // your API key
+```
 
-### iOS Simulator won't open
+After that you could show banners:
 
-If you're on a Mac, there are a few errors that users sometimes see when attempting to `npm run ios`:
+```javascript
+Appodeal.showBannerBottom()
+```
 
-* "non-zero exit code: 107"
-* "You may need to install Xcode" but it is already installed
-* and others
+For more implemented methods see the App.js file in this repo.
 
-There are a few steps you may want to take to troubleshoot these kinds of errors:
+# Contributing
 
-1. Make sure Xcode is installed and open it to accept the license agreement if it prompts you. You can install it from the Mac App Store.
-2. Open Xcode's Preferences, the Locations tab, and make sure that the `Command Line Tools` menu option is set to something. Sometimes when the CLI tools are first installed by Homebrew this option is left blank, which can prevent Apple utilities from finding the simulator. Make sure to re-run `npm/yarn run ios` after doing so.
-3. If that doesn't work, open the Simulator, and under the app menu select `Reset Contents and Settings...`. After that has finished, quit the Simulator, and re-run `npm/yarn run ios`.
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change. 
 
-### QR Code does not scan
+Please note we have a code of conduct, please follow it in all your interactions with the project.
 
-If you're not able to scan the QR code, make sure your phone's camera is focusing correctly, and also make sure that the contrast on the two colors in your terminal is high enough. For example, WebStorm's default themes may [not have enough contrast](https://github.com/react-community/create-react-native-app/issues/49) for terminal QR codes to be scannable with the system barcode scanners that the Expo app uses.
+## Pull Request Process
 
-If this causes problems for you, you may want to try changing your terminal's color theme to have more contrast, or running Create React Native App from a different terminal. You can also manually enter the URL printed by the packager script in the Expo app's search bar to load it manually.
+1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
+   build.
+2. Update the README.md with details of changes to the interface, this includes new environment 
+   variables, exposed ports, useful file locations and container parameters.
+3. Increase the version numbers in any examples files and the README.md to the new version that this
+   Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
+4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
+   do not have permission to do that, you may request the second reviewer to merge it for you.
+
+## Code of Conduct
+
+### Our Pledge
+
+In the interest of fostering an open and welcoming environment, we as
+contributors and maintainers pledge to making participation in our project and
+our community a harassment-free experience for everyone, regardless of age, body
+size, disability, ethnicity, gender identity and expression, level of experience,
+nationality, personal appearance, race, religion, or sexual identity and
+orientation.
+
+### Our Standards
+
+Examples of behavior that contributes to creating a positive environment
+include:
+
+* Using welcoming and inclusive language
+* Being respectful of differing viewpoints and experiences
+* Gracefully accepting constructive criticism
+* Focusing on what is best for the community
+* Showing empathy towards other community members
+
+Examples of unacceptable behavior by participants include:
+
+* The use of sexualized language or imagery and unwelcome sexual attention or
+advances
+* Trolling, insulting/derogatory comments, and personal or political attacks
+* Public or private harassment
+* Publishing others' private information, such as a physical or electronic
+  address, without explicit permission
+* Other conduct which could reasonably be considered inappropriate in a
+  professional setting
+
+### Our Responsibilities
+
+Project maintainers are responsible for clarifying the standards of acceptable
+behavior and are expected to take appropriate and fair corrective action in
+response to any instances of unacceptable behavior.
+
+Project maintainers have the right and responsibility to remove, edit, or
+reject comments, commits, code, wiki edits, issues, and other contributions
+that are not aligned to this Code of Conduct, or to ban temporarily or
+permanently any contributor for other behaviors that they deem inappropriate,
+threatening, offensive, or harmful.
+
+### Scope
+
+This Code of Conduct applies both within project spaces and in public spaces
+when an individual is representing the project or its community. Examples of
+representing a project or community include using an official project e-mail
+address, posting via an official social media account, or acting as an appointed
+representative at an online or offline event. Representation of a project may be
+further defined and clarified by project maintainers.
+
+### Enforcement
+
+Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported by contacting the project team at i@drakmail.ru. All
+complaints will be reviewed and investigated and will result in a response that
+is deemed necessary and appropriate to the circumstances. The project team is
+obligated to maintain confidentiality with regard to the reporter of an incident.
+Further details of specific enforcement policies may be posted separately.
+
+Project maintainers who do not follow or enforce the Code of Conduct in good
+faith may face temporary or permanent repercussions as determined by other
+members of the project's leadership.
+
+### Attribution
+
+This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
+available at [http://contributor-covenant.org/version/1/4][version]
+
+[homepage]: http://contributor-covenant.org
+[version]: http://contributor-covenant.org/version/1/4/
+
+# LICENSE
+
+The MIT License (MIT)
+
+Copyright (c) 2017 drakmail
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

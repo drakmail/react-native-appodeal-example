@@ -3,15 +3,6 @@
 
     <item
         is-multidex="false"
-        jar="/Users/drakmail/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
-        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.3.0_2dda4d7fb90825e76fc23d7c0b43af73e3687406.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -21,17 +12,26 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/drakmail/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.8.0/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_6331e5f6460708566c2abdb375bcaf5379708658.jar" />
+        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-9.8.0_317c41ea1d8426daef9d6277e5f178ae35797b97.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.2/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_861659d7813e5483a0fa95cd33170f5d95050af1.jar" />
     </item>
     <item
         is-multidex="false"
         jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
@@ -39,12 +39,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
-        jumboMode="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.3.0_80f553092ffb86a7d80714b31ddbea4d4aea8706.jar" />
+        sha1="e9b2cfdfd59b03643f1e240668275378b96615a8">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-lite-9.8.0_bff68420595aa664dd76f2ee1ef59f49142d5cd7.jar" />
     </item>
     <item
         is-multidex="false"
@@ -57,21 +57,21 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/libs/yandex-metrica-2.41.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1e7d80934e10687570f3b6dcc2c83b45a77c2667">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/yandex-metrica-2.41_d82905814b8b374c84b2a22eff708c2d193276e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/drakmail/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
         <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_7aca4d20d6cbcdef257cf26a2d05bb6f2cb9e4c2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
-        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_c0b13de6a4c4039ac5351713f149c8f2a6fb4557.jar" />
     </item>
     <item
         is-multidex="false"
@@ -84,12 +84,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.8.0_477e7a9bf17562c48b568e9a1c111170b52d1180.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="debf30ce0a7560396b6235edef77e447006454c2">
-        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.3.0_014d1b20f58ab39e111f6b8d85a626c7609333a9.jar" />
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0_2627ba2c47a2ea3c3c09ca58d5c4a3339cb2d614.jar" />
     </item>
     <item
         is-multidex="false"
@@ -99,6 +108,312 @@
         revision="23.0.1"
         sha1="af9665a44df26b4098e24c934c1109507845ef5e">
         <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.44.2_4481c85e571207baa0bf67500a1548f7b6fe3aa4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.8.0_a2bc4c14403ed6de35b0c3ee7fa23b6cd546ca99.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/libs/appodeal-1.14.15.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b7d31c0290ad17629d907a42bf64f24b4fbb6ae5">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/appodeal-1.14.15_3958c14f42c9a28cf83fe36f15a8b82ef09064c1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_d4a12a7857d6d36817ec4d1a7e4d062e3c3f5c75.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/libs/chartboost-6.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fcb5174a239acedaa40ff88d83eeb33dcc87f6aa">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/chartboost-6.4.1_63edd896d28234eaff8241927483661aa9325f76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_1ebf239e3073d74935d74bdca22b81037e5a246a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_b16aade2b45babdad20b8025bad067d4e590bad3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_46c1f6c8e707c5acd784d015af8d4f82c577b759.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.8.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="363a20f1d25336e827dd24020f2ecdc42d62638f">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gass-9.8.0_7b2a031ca68e196cf6f9d0482bb156a04d6bde6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/libs/flurry-analytics-6.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c22e8294c85e5529da18fa9b7c6d82ccbf5591ee">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/flurry-analytics-6.2.0_22bdcae9c8e05118657d00c9454676b233607971.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_e5bdef78c78af29ca2bee74e0dc39c0b709949ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_6ba7d5eea6dd37093847f8b03ac2fa49da977b8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_3e33441434812c8b6025c918deba67a1a1a79d43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.3.0_014d1b20f58ab39e111f6b8d85a626c7609333a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f2d240dd085626f03f759c41d628a0c8b63e491f">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-9.8.0_c895f6232b4c34805ad31caba9360ccd3543d86d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_38c807f465b04cf670f0c733143af1e34551e708.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_371663fbdfd7467f5d082a9e275679467297514a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/libs/applovin-6.2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0184950ecad5b312aa19ec997beed761825c5f12">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/applovin-6.2.2_828fb01e398b5182e061fd991e9a5e1063219409.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.2/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_861659d7813e5483a0fa95cd33170f5d95050af1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_f5a13171cef6474b34dbb94bd166b9f6d236d0f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/libs/inmobi-5.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f3139374a79dc0e35a4933208eb422e301e54142">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/inmobi-5.3.1_e35f58eb164d0e33727c8d00c1b42618315d78b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.8.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.8.0_a2bc4c14403ed6de35b0c3ee7fa23b6cd546ca99.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_6331e5f6460708566c2abdb375bcaf5379708658.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/libs/inmobi-5.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f3139374a79dc0e35a4933208eb422e301e54142">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/inmobi-5.3.1_e35f58eb164d0e33727c8d00c1b42618315d78b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_bf8b5f328cc55079ca9f0f3b65bb0171ee5ab800.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.8.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e9b2cfdfd59b03643f1e240668275378b96615a8">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-lite-9.8.0_bff68420595aa664dd76f2ee1ef59f49142d5cd7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.8.0_d9a71f8b1e1d31fd3eaa1e04b57cb94826a9bd26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_b5529830447d05d5e50cb7266027f04ac2007e37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_c0b13de6a4c4039ac5351713f149c8f2a6fb4557.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.3.0_014d1b20f58ab39e111f6b8d85a626c7609333a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.8.0_477e7a9bf17562c48b568e9a1c111170b52d1180.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_b594b1e00626f64b9ba819fc3b10214dd9ef0831.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="314de53aea631e2d6fe7167df3662fa23ca89290">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/rnappodeal-react-native-appodeal-unspecified_1f2fdec307e351500829d4b998a19143b2a02b0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_11e55f38c42d26a85b1ee2b72ad8de6815b08e13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_1ebf239e3073d74935d74bdca22b81037e5a246a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -129,17 +444,53 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/libs/appodeal-1.14.15.jar"
-        jumboMode="false"
+        jar="/Users/drakmail/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="b7d31c0290ad17629d907a42bf64f24b4fbb6ae5">
-        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/appodeal-1.14.15_3958c14f42c9a28cf83fe36f15a8b82ef09064c1.jar" />
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_fb0a8633f090a079059cdfde6333a4121de5923e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0_2627ba2c47a2ea3c3c09ca58d5c4a3339cb2d614.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ee5304fd374e0b4ebf6b42d4037fbfb2c5336511">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-clearcut-9.8.0_cb3a1fe14b12694037154be93c13c70158fb20bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.2/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="af9665a44df26b4098e24c934c1109507845ef5e">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.44.2_4481c85e571207baa0bf67500a1548f7b6fe3aa4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_9fecde69023d39dda1f195eabcb12be042289acc.jar" />
     </item>
     <item
         is-multidex="false"
         jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
@@ -156,15 +507,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/drakmail/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="63994437f62bc861bc20c605d12962f7246116d1">
-        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_1ebf239e3073d74935d74bdca22b81037e5a246a.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/drakmail/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
         jumboMode="false"
         optimize="true"
@@ -174,12 +516,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/libs/appodeal-1.14.15.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b7d31c0290ad17629d907a42bf64f24b4fbb6ae5">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/appodeal-1.14.15_3958c14f42c9a28cf83fe36f15a8b82ef09064c1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.8.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
-        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_46c1f6c8e707c5acd784d015af8d4f82c577b759.jar" />
+        sha1="ee5304fd374e0b4ebf6b42d4037fbfb2c5336511">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-clearcut-9.8.0_cb3a1fe14b12694037154be93c13c70158fb20bc.jar" />
     </item>
     <item
         is-multidex="false"
@@ -192,17 +543,26 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/libs/flurry-analytics-6.2.0.jar"
-        jumboMode="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/libs/my-target-4.5.1.jar"
+        jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="c22e8294c85e5529da18fa9b7c6d82ccbf5591ee">
-        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/flurry-analytics-6.2.0_22bdcae9c8e05118657d00c9454676b233607971.jar" />
+        sha1="dbbeddb3b340533571ee541d4a8b2a7a27d69ce9">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/my-target-4.5.1_19fe0a224b6dd40e4c1a7428541010018b9fc216.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_6ba7d5eea6dd37093847f8b03ac2fa49da977b8d.jar" />
     </item>
     <item
         is-multidex="false"
         jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
@@ -219,12 +579,75 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/libs/flurry-analytics-6.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c22e8294c85e5529da18fa9b7c6d82ccbf5591ee">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/flurry-analytics-6.2.0_22bdcae9c8e05118657d00c9454676b233607971.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="363a20f1d25336e827dd24020f2ecdc42d62638f">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gass-9.8.0_7b2a031ca68e196cf6f9d0482bb156a04d6bde6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/drakmail/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
         <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_38c807f465b04cf670f0c733143af1e34551e708.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.8.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f2d240dd085626f03f759c41d628a0c8b63e491f">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-9.8.0_c895f6232b4c34805ad31caba9360ccd3543d86d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.8.0_d9a71f8b1e1d31fd3eaa1e04b57cb94826a9bd26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_c0b13de6a4c4039ac5351713f149c8f2a6fb4557.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_7aca4d20d6cbcdef257cf26a2d05bb6f2cb9e4c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.8.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-9.8.0_317c41ea1d8426daef9d6277e5f178ae35797b97.jar" />
     </item>
     <item
         is-multidex="false"
@@ -237,6 +660,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/drakmail/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_6331e5f6460708566c2abdb375bcaf5379708658.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -246,17 +678,8 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.3.0_d7504c5a52f683b90a6300b6f949ecbf9b1810e1.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/libs/applovin-6.2.2.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="0184950ecad5b312aa19ec997beed761825c5f12">
@@ -264,21 +687,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.2/jars/libs/infer-annotations-1.5.jar"
+        jar="/Users/drakmail/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
-        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_861659d7813e5483a0fa95cd33170f5d95050af1.jar" />
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_371663fbdfd7467f5d082a9e275679467297514a.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/rnappodeal/react-native-appodeal/unspecified/jars/libs/inmobi-5.3.1.jar"
-        jumboMode="false"
+        jar="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="f3139374a79dc0e35a4933208eb422e301e54142">
-        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/inmobi-5.3.1_e35f58eb164d0e33727c8d00c1b42618315d78b4.jar" />
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/Users/drakmail/Develop/react-native-appodeal-example/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_46c1f6c8e707c5acd784d015af8d4f82c577b759.jar" />
     </item>
 
 </items>
