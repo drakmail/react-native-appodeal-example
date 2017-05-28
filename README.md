@@ -2,6 +2,8 @@
 
 Example of integration appodeal SDK with react-native (based on [nulleof](https://github.com/nulleof/react-native-appodeal) modified package: [https://github.com/drakmail/react-native-appodeal](https://github.com/drakmail/react-native-appodeal))
 
+![demo](https://raw.githubusercontent.com/drakmail/react-native-appodeal-example/master/demo/example.gif)
+
 ## How to run
 
 1. `git clone https://github.com/drakmail/react-native-appodeal-example.git`
@@ -43,7 +45,7 @@ According to [appodeal documentation](https://www.appodeal.ru/sdk/documentation?
 
 1. Inside `<manifest>` tag:
 
-```
+```xml
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -51,7 +53,7 @@ According to [appodeal documentation](https://www.appodeal.ru/sdk/documentation?
 
 2. Inside `<application>` tag:
 
-```
+```xml
 <meta-data android:name="com.appodeal.framework" android:value="android" />
 <receiver android:name="com.appodeal.ads.AppodealPackageAddedReceiver" android:exported="true" android:enabled="true">
 <intent-filter>
