@@ -17,7 +17,18 @@ const Button = ({ action, children }) => (
 export default class App extends React.Component {
   componentWillMount () {
     Appodeal.setTesting(true)
+    Appodeal.disableNetwork('inmobi')
     Appodeal.init('6ed531b0a72a393f6a68e36c31200eaf1cf45dd1497bedfb')
+
+    Appodeal.setAge(18)
+    // Appodeal.setBirthday('17/06/1990')
+    Appodeal.setEmail('spam@youmeapp.ru')
+    Appodeal.setInterests('testing, react-native, android')
+    Appodeal.setRelation('dating') // dating / engaged / married / searching / single / other
+    Appodeal.setGender('female') // female / male / other
+    Appodeal.setAlcohol('positive') // positive / negative / neutral
+    Appodeal.setSmoking('positive') // positive / negative / neutral
+
     this.hideBanner()
   }
 

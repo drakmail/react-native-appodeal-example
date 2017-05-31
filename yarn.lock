@@ -2944,7 +2944,7 @@ react-devtools-core@^2.0.8:
 
 "react-native-appodeal@https://github.com/drakmail/react-native-appodeal.git":
   version "0.1.0"
-  resolved "https://github.com/drakmail/react-native-appodeal.git#2a466941ce060a243622b9b1d665fffd65f35928"
+  resolved "https://github.com/drakmail/react-native-appodeal.git#78c27159d110ce3976343b046cc3de7e7ccc7166"
 
 react-native@^0.44.0:
   version "0.44.2"
